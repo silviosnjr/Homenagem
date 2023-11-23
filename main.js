@@ -22,6 +22,7 @@ for (let i = 0; i < botoes.length; i++) {
         tag.style.display = "inline-block";
         if(audio){audio.pause();}
         audio = document.getElementById("som"+i);
+        audio.volume = 0.5;
         audio.play();
         typeWriter(id, txt);
     }
