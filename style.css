@@ -52,7 +52,7 @@ body {
 .titulo-principal {
     text-align: left;
     width: 100%;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .botoes {
@@ -82,7 +82,11 @@ body {
 }
 
 .botao:first-child {
-    border-radius: 40px 40px 0 0;
+    border-radius: 40px 0 0 0;
+}
+
+.botao:last-child {
+    border-radius: 0 40px 0 0;
 }
 
 .abas-textos {
@@ -102,13 +106,15 @@ body {
 }
 
 .aba-titulo-principal {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin: 0;
     text-align: center;
 }
 
 .titulo-secundario {
     color: var(--verde);
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin: 15px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -136,7 +142,7 @@ body {
 }
 
 .foto{
-    width: 25%;
+    width: 20%;
     margin: 15px;
     border-radius: 10px;
 }
@@ -145,7 +151,7 @@ body {
 .conteudo-texto-animado{
     display: flex;
     align-items: center;
-
+    font-size: 1.5rem;
     justify-content: center;   
     width: 100%;  
 }
