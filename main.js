@@ -11,12 +11,12 @@ if(senha === "FORMADORES EM PROGRAMAÇÃO"){
     var tag = document.getElementById("conteudo-bloqueado");
     tag.style.display = "flex";
 
-    /*audio = document.getElementById("somPrincipal");
+    audio = document.getElementById("somPrincipal");
     audio.volume = 0.5;
     var areaReproducao = document.getElementById('msg-bloqueado');
     areaReproducao.addEventListener('mouseover', function() {
         meuAudio.play();
-    });*/
+    });
     
 }else{
     var tag = document.getElementById("msg-bloqueado");
