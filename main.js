@@ -2,8 +2,9 @@ let botoes = document.querySelectorAll(".botao");
 let textos = document.querySelectorAll(".aba-conteudo");
 var audio;
 
-let senha = prompt("Insira a palavra chave para desbloquear:");
-senha = senha.toUpperCase();
+//let senha = prompt("Insira a palavra chave para desbloquear:");
+//senha = senha.toUpperCase();
+let senha = "FORMADORES EM PROGRAMAÇÃO";//desbloqueado a exigência de senha.
 
 if(senha === "FORMADORES EM PROGRAMAÇÃO"){
     var tag = document.getElementById("msg-bloqueado");
