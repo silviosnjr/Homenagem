@@ -2,6 +2,27 @@ let botoes = document.querySelectorAll(".botao");
 let textos = document.querySelectorAll(".aba-conteudo");
 var audio;
 
+let senha = prompt("Insira a palavra chave para desbloquear:");
+senha = senha.toUpperCase();
+
+if(senha === "FORMADORES EM PROGRAMAÇÃO"){
+    var tag = document.getElementById("msg-bloqueado");
+    tag.style.display = "none";
+    var tag = document.getElementById("conteudo-bloqueado");
+    tag.style.display = "flex";
+
+    /*audio = document.getElementById("somPrincipal");
+    audio.volume = 0.5;
+    var areaReproducao = document.getElementById('msg-bloqueado');
+    areaReproducao.addEventListener('mouseover', function() {
+        meuAudio.play();
+    });*/
+    
+}else{
+    var tag = document.getElementById("msg-bloqueado");
+    tag.outerHTML  = "<h1 class='titulo-principal'>Você não inseriu a palavra chave correta para o desbloqueio, atualize a página e tente novamente<span class='pisca'>_</span></h1>";
+}
+
 for (let i = 0; i < botoes.length; i++) {
     botoes[i].onclick = function () {
         botoes.forEach(element => {
